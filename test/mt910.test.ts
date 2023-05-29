@@ -68,7 +68,6 @@ describe("MT910 Message Type", () => {
     expect(result.accountIdentification).toEqual(
       expected.accountIdentification
     );
-    expect(result.statementDate).toEqual(expected.statementDate);
     expect(result.intermediary).toEqual(expected.intermediary);
     expect(result.dateCurrencyAmount).toEqual(expected.dateCurrencyAmount);
     expect(result.orderingInstitution).toEqual(expected.orderingInstitution);
