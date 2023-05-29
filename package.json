@@ -7,6 +7,9 @@
   "bin": {
     "swift-parse": "scripts/cli.js"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/stitch-money"
+  },
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
