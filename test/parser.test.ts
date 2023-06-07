@@ -341,7 +341,7 @@ describe("Parser", () => {
       expect(result[0].accountIdentification).toEqual("0000004047710139");
       expect(result[0].intermediary).toEqual("BKTRUS33");
       expect(result[0].senderToReceiverInformation).toEqual(
-        "0000320568/NCOL/TCN /NPF CREDIT                    /000010005"
+        "0000320568/NCOL/TCN /NPF CREDIT                    /000010005  "
       );
     });
 
