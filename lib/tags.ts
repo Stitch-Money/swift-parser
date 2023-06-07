@@ -236,9 +236,7 @@ class TagSenderToReceiverInformation extends Tag {
 
   _extractFields(match: string[]) {
     return {
-      senderToReceiverInformation: match[0]
-        .replace(/[\r\n]+|\s{2,}|\r\n/g, "")
-        .trim(),
+      senderToReceiverInformation: match[0].replace(/[\r\n]+|\r\n/g, "").trim(),
     };
   }
 
