@@ -326,7 +326,7 @@ describe("Parser", () => {
       expect(result.length).toEqual(1);
       expect(result[0].accountIdentification).toEqual("0000004047710139");
       expect(result[0].senderToReceiverInformation).toEqual(
-        "0000000000CONTRA-0002167016/NDDT/AKD/ACB CONTRA/000010000"
+        "0000000000CONTRA-0002167016/NDDT/AKD   /ACB CONTRA                      /000010000"
       );
     });
 
@@ -341,7 +341,7 @@ describe("Parser", () => {
       expect(result[0].accountIdentification).toEqual("0000004047710139");
       expect(result[0].intermediary).toEqual("BKTRUS33");
       expect(result[0].senderToReceiverInformation).toEqual(
-        "0000320568/NCOL/TCN/NPF CREDIT/000010005"
+        "0000320568/NCOL/TCN /NPF CREDIT                    /000010005"
       );
     });
 

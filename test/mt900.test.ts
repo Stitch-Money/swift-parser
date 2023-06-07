@@ -36,7 +36,7 @@ describe("MT900 Message Type", () => {
       new tags.TagDateCurrencyAmount("190813ZAR420198,79"),
       new tags.TagOrderingInstitution("ABSAZAJJXXX"),
       new tags.TagSenderToReceiverInformation(
-        "0000000000CONTRA-0002167016\n/NDDT/AKD\n/ACB CONTRA      \n/000010000"
+        "0000000000 CONTRA-0002167016\n/NDDT/AKD\n/ACB CONTRA      \n/000010000"
       ),
     ];
 
@@ -58,7 +58,7 @@ describe("MT900 Message Type", () => {
       },
       orderingInstitution: "ABSAZAJJXXX",
       senderToReceiverInformation:
-        "0000000000CONTRA-0002167016/NDDT/AKD/ACB CONTRA/000010000",
+        "0000000000 CONTRA-0002167016/NDDT/AKD/ACB CONTRA      /000010000",
       messageBlocks: {},
     } as Statement);
 

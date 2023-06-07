@@ -37,7 +37,7 @@ describe("MT910 Message Type", () => {
       new tags.TagOrderingInstitution("ABSAZAJJXXX"),
       new tags.TagIntermediary("BKTRUS33"),
       new tags.TagSenderToReceiverInformation(
-        "0000320568\n/NCOL/TCN\n/NPF CREDIT    \n/000010005"
+        "0000  320568\n/NCOL/TCN\n/NPF CREDIT    \n/000010005"
       ),
     ];
 
@@ -58,7 +58,8 @@ describe("MT910 Message Type", () => {
         amount: BigNumber(420198.79),
       },
       orderingInstitution: "ABSAZAJJXXX",
-      senderToReceiverInformation: "0000320568/NCOL/TCN/NPF CREDIT/000010005",
+      senderToReceiverInformation:
+        "0000  320568/NCOL/TCN/NPF CREDIT    /000010005",
       messageBlocks: {},
       intermediary: "BKTRUS33",
     } as Statement);
