@@ -209,7 +209,9 @@ exports[`Parser Full Examples test1.mt900 1`] = `
     "orderingCustomer": undefined,
     "orderingInstitution": "ABSAZAJJXXX",
     "relatedReference": "0000000000CONTRA",
-    "senderToReceiverInformation": "0000000000CONTRA-0002167016/NDDT/AKD /ACB CONTRA                    /000010000",
+    "senderToReceiverInformation": "0000000000CONTRA-0002167016/NDDT/AKD 
+/ACB CONTRA                    
+/000010000",
     "statementDate": 2019-08-13T11:36:00.000Z,
     "transactionReference": "0000000000CONTRA",
     "transactions": [],
@@ -220,27 +222,27 @@ exports[`Parser Full Examples test1.mt900 1`] = `
 exports[`Parser Full Examples test1.mt910 1`] = `
 [
   Statement {
-    "accountIdentification": "0000004047710139",
+    "accountIdentification": "04104423097",
     "closingAvailableBalance": undefined,
     "closingAvailableBalanceDate": undefined,
     "closingBalance": undefined,
     "closingBalanceDate": undefined,
     "currency": undefined,
     "dateCurrencyAmount": {
-      "amount": "157093.78",
+      "amount": "1",
       "currencyCode": "ZAR",
-      "valueDate": 2019-08-14T00:00:00.000Z,
+      "valueDate": 2023-06-02T00:00:00.000Z,
     },
     "forwardAvailableBalance": undefined,
     "forwardAvailableBalanceDate": undefined,
     "informationToAccountOwner": "",
-    "intermediary": "BKTRUS33",
+    "intermediary": undefined,
     "messageBlocks": {
       "1": {
         "value": "F01ABSAZAJJAXXX9999999999",
       },
       "2": {
-        "value": "I910XJSEZAJ0XSFXN",
+        "value": "I910NMB00433X   N",
       },
     },
     "number": undefined,
@@ -248,10 +250,12 @@ exports[`Parser Full Examples test1.mt910 1`] = `
     "openingBalanceDate": undefined,
     "orderingCustomer": undefined,
     "orderingInstitution": "ABSAZAJJXXX",
-    "relatedReference": "0000320568",
-    "senderToReceiverInformation": "0000320568/NCOL/TCN /NPF CREDIT                    /000010005",
-    "statementDate": 2019-08-13T23:10:00.000Z,
-    "transactionReference": "0000320568",
+    "relatedReference": "CAPITEC   NSNQ6E",
+    "senderToReceiverInformation": "CAPITEC   NSNQ6EEIWGW828QP6QRF/NCOL/ACC 
+/ACB CREDIT                    
+/000000698",
+    "statementDate": 2023-06-02T17:11:00.000Z,
+    "transactionReference": "CAPITEC   NSNQ6E",
     "transactions": [],
   },
 ]

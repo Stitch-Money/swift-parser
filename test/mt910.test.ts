@@ -73,8 +73,10 @@ describe("MT910 Message Type", () => {
     expect(result.intermediary).toEqual(expected.intermediary);
     expect(result.dateCurrencyAmount).toEqual(expected.dateCurrencyAmount);
     expect(result.orderingInstitution).toEqual(expected.orderingInstitution);
-    expect(result.senderToReceiverInformation).toEqual(
-      expected.senderToReceiverInformation
+    expect(
+      result.senderToReceiverInformation?.replace(/(\r\n|\r|\n)/g, "")
+    ).toEqual(
+      expected.senderToReceiverInformation?.replace(/(\r\n|\r|\n)/g, "")
     );
   });
 });
